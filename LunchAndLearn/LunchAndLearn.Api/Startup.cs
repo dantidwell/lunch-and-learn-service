@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Http.Formatting;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Http;
 using Owin;
 
 namespace LunchAndLearn.Api
@@ -11,11 +14,12 @@ namespace LunchAndLearn.Api
     {
         public void Configuration(IAppBuilder app)
         {
-            app.Run(ctx =>
-            {
-                ctx.Response.ContentType = "text/plain";
-                return ctx.Response.WriteAsync("Hello, World!");
-            });
+            var httpCfg = new HttpConfiguration();
+            httpCfg.Routes.MapHttpRoute(name: "DefaultApi", routeTemplate: "api/{controller}/{id}",
+                defaults: new {id = RouteParameter.Optional});
+            httpCfg.Formatters.Clear();
+            httpCfg.Formatters.Add(new JsonMediaTypeFormatter());
+            app.UseWebApi(httpCfg);
         }
     }
 }
