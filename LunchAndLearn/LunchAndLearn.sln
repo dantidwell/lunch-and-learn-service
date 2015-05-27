@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LunchAndLearn.Api", "LunchA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LunchAndLearn.Api.UnitTests", "LunchAndLearn.Api.UnitTests\LunchAndLearn.Api.UnitTests.csproj", "{727A07B8-0DB6-49B2-8905-C68BF98990DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LunchAndLearn.Api.AcceptanceTests", "LunchAndLearn.Api.AcceptanceTests\LunchAndLearn.Api.AcceptanceTests.csproj", "{43FBC727-BEBC-4AE4-AA32-06DDC916E6BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{727A07B8-0DB6-49B2-8905-C68BF98990DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{727A07B8-0DB6-49B2-8905-C68BF98990DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{727A07B8-0DB6-49B2-8905-C68BF98990DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43FBC727-BEBC-4AE4-AA32-06DDC916E6BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43FBC727-BEBC-4AE4-AA32-06DDC916E6BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43FBC727-BEBC-4AE4-AA32-06DDC916E6BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43FBC727-BEBC-4AE4-AA32-06DDC916E6BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
