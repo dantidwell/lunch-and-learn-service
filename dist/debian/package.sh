@@ -7,10 +7,12 @@ mkdir $PACKAGE_ROOT
 mkdir "$PACKAGE_ROOT/usr"
 mkdir "$PACKAGE_ROOT/usr/bin"
 mkdir "$PACKAGE_ROOT/usr/lib"
+mkdir "$PACKAGE_ROOT/usr/lib/lunch-and-learn-api"
 mkdir "$PACKAGE_ROOT/etc"
 mkdir "$PACKAGE_ROOT/etc/init.d"
 
-cp -a "./../../LunchAndLearn/LunchAndLearn.Api/bin/${CONFIGURATION}/." "${PACKAGE_ROOT}/usr/lib"
+cp -a "./../../LunchAndLearn/LunchAndLearn.Api/bin/${CONFIGURATION}/." "${PACKAGE_ROOT}/usr/lib/lunch-and-learn-api"
+cp -a "./lunch-and-learn-api.sh" "${PACKAGE_ROOT}/usr/bin/"
 mkdir "$PACKAGE_ROOT/DEBIAN"
 echo "Package: lunch-and-learn-api" >> "${PACKAGE_ROOT}/DEBIAN/control"
 echo "Version: ${GO_PIPELINE_LABEL}" >> "${PACKAGE_ROOT}/DEBIAN/control"
