@@ -15,8 +15,7 @@ namespace LunchAndLearn.Api
             var endpoint = String.Format("http://*:{0}", port);
             using (WebApp.Start<Startup>(endpoint))
             {
-                Console.WriteLine("Press [enter] to exit...");
-                Console.ReadLine();
+                while(true) {}
             }
         }
     }
