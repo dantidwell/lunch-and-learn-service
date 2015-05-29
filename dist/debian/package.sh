@@ -19,7 +19,6 @@ echo "Version: ${GO_PIPELINE_LABEL}" >> "${PACKAGE_ROOT}/DEBIAN/control"
 echo "Section: base" >> "${PACKAGE_ROOT}/DEBIAN/control"
 echo "Priority: optional" >> "${PACKAGE_ROOT}/DEBIAN/control"
 echo "Architecture: amd64" >> "${PACKAGE_ROOT}/DEBIAN/control"
-echo "Depends: " >> "${PACKAGE_ROOT}/DEBIAN/control"
 echo "Maintainer: Dan Tidwell <dantidwell921@gmail.com>" >> "${PACKAGE_ROOT}/DEBIAN/control"
 echo "Description: Lunch and Learn Web Service" >> "${PACKAGE_ROOT}/DEBIAN/control"
 
