@@ -13,6 +13,8 @@ mkdir "$PACKAGE_ROOT/etc/init.d"
 
 cp -a "./../../LunchAndLearn/LunchAndLearn.Api/bin/${CONFIGURATION}/." "${PACKAGE_ROOT}/usr/lib/lunch-and-learn-api"
 cp -a "./lunch-and-learn-api.sh" "${PACKAGE_ROOT}/usr/bin/"
+cp -a "./lunch-and-learn-api" "${PACKAGE_ROOT}/etc/init.d/"
+
 mkdir "$PACKAGE_ROOT/DEBIAN"
 echo "Package: lunch-and-learn-api" >> "${PACKAGE_ROOT}/DEBIAN/control"
 echo "Version: ${GO_PIPELINE_LABEL}" >> "${PACKAGE_ROOT}/DEBIAN/control"
