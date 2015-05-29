@@ -4,7 +4,7 @@ namespace LunchAndLearn.Api.UnitTests
     [TestFixture]
     public class ReallyHardTests
     {
-        //[Test]
-        //public void ReallyHardTest() { Assert.IsTrue(false); } 
+        [Test]
+        public void ReallyHardTest() { Assert.IsTrue(false); } 
     }
 }
